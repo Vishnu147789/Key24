@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome - Key Locker{% endblock %}
+
+{% block content %}
+<div class="container-fluid bg-dark text-light min-vh-100 d-flex flex-column justify-content-center align-items-center animate__animated animate__fadeIn">
+  <div class="row w-100 justify-content-center">
+    <div class="col-lg-6 text-center">
+      <!-- Title -->
+      <h1 class="display-4 fw-bold mb-3 animate__animated animate__bounceIn">🔒 Key Locker</h1>
+      <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s">Secure Credential Management System</p>
+
+      <!-- Description -->
+      <p class="fs-5 mb-5 animate__animated animate__fadeInUp animate__delay-2s">
+        Store, manage, and retrieve your sensitive keys securely with industry-standard encryption.
+      </p>
+
+      <!-- Call to Action Buttons -->
+      {% if not session.username %}
+      <div class="mb-5 animate__animated animate__fadeInUp animate__delay-3s">
+        <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg me-3 px-5 py-3 rounded-pill shadow-lg">
+          Get Started
+        </a>
+        <a href="{{ url_for('login') }}" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill shadow-lg">
+          Login
+        </a>
+      </div>
+      {% endif %}
+
+      <!-- About Section -->
+      <div class="bg-secondary bg-opacity-25 rounded p-4 animate__animated animate__fadeInUp animate__delay-4s shadow">
+        <h3 class="mb-3">About Key Locker</h3>
+        <p class="mb-4">
+          Key Locker is a Flask-powered web application designed to securely store and manage your sensitive credentials with ease and confidence.
+        </p>
+
+        <div class="row text-start">
+          <div class="col-md-6 mb-3">
+            <i class="bi bi-shield-lock-fill fs-3 text-primary me-2"></i>
+            <strong>Security First:</strong> Industry-standard password hashing and session isolation.
+          </div>
+          <div class="col-md-6 mb-3">
+            <i class="bi bi-person-circle fs-3 text-primary me-2"></i>
+            <strong>User Privacy:</strong> Complete isolation of each user's data.
+          </div>
+          <div class="col-md-6 mb-3">
+            <i class="bi bi-gear-fill fs-3 text-primary me-2"></i>
+            <strong>Easy Management:</strong> Intuitive UI for keys and secrets.
+          </div>
+          <div class="col-md-6 mb-3">
+            <i class="bi bi-journal-text fs-3 text-primary me-2"></i>
+            <strong>Productivity:</strong> Copy-to-clipboard and description support.
+          </div>
+        </div>
+      </div>
+
+      <footer class="mt-5 text-muted small animate__animated animate__fadeInUp animate__delay-5s">
+        &copy; 2025 Key Locker &mdash; Secure Credential Management | Version 1.0
+      </footer>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{
+    "vishnu22027": [
+        {
+            "name": "GMAIL_PASS",
+            "value": "mySecureP@ssw0125",
+            "description": "My Gmail App password",
+            "created_at": "2025-09-06T09:35:34.693177"
+        },
+        {
+            "name": "WIFI_HOME\t",
+            "value": "strongwifi2025",
+            "description": "Home WiFi password",
+            "created_at": "2025-09-06T09:37:54.847579"
+        },
+        {
+            "name": "OFFICE_DOOR_PIN",
+            "value": "2758",
+            "description": "Main door PIN code",
+            "created_at": "2025-09-06T09:38:25.395741"
+        },
+        {
+            "name": "wifi",
+            "value": "password123",
+            "description": "it is my wifi password",
+            "created_at": "2025-10-24T11:34:39.088374"
+        }
+    ],
+    "Reddy56347": [
+        {
+            "name": "google ",
+            "value": "password",
+            "description": "google password",
+            "created_at": "2025-09-06T18:19:50.096963"
+        }
+    ]
+}
